@@ -18,7 +18,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xtalent/zgrab_/zlib"
+	"github.com/xtalentfeng/zgrab_/zlib"
 	"github.com/xtalentfeng/zgrab_/ztools/processing"
 	"github.com/xtalentfeng/zgrab_/ztools/x509"
 	"github.com/xtalentfeng/zgrab_/ztools/zlog"
