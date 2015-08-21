@@ -617,8 +617,8 @@ func (c *Conn) SendS7Echo() (int,error){
 	}
 	req_COTP,err := COTP_req.MarshalBinary()
 	req := TKPTRequest{
-		version:3,
-		reserved:0,
+		version: 0x03,
+		reserved: 0x0,
 		size:len(req_COTP)+4,
 		data:req_COTP,
 	}

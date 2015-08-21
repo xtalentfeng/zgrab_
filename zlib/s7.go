@@ -52,10 +52,10 @@ type COTPConnectionRequest struct {
 }
 
 func (r *TKPTRequest) MarshalBinary() (data []byte, err error){
-	data = make([]byte,1+1+2+len(r.data))
+	data = make([]byte,4+len(r.data))
 	data[0] = r.version
 	data[1] = r.reserved
-	binary.BigEndian.PutUint16(data[2:3], uint16(len(r.data)+4))
+	binary.BigEndian.PutUint16(data[2:4], uint16(len(r.data)+4))
 	copy(data[4:],r.data)
 	return
 }
