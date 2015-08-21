@@ -141,7 +141,7 @@ func (c *Conn) GetS7Response() (res TKPTResponse, err error){
 		err = fmt.Errorf("s7: not a s7 response")
 		return
 	}
-	msglen := int (binary.BigEndian.Uint16(header[2:4]))
+	msglen := （int (binary.BigEndian.Uint16(header[2:4])) - 4） //这里的msglen为整个长度
 
 	cnt = 0
 	if msglen >len(buf){

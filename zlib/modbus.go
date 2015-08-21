@@ -235,7 +235,7 @@ func (c *Conn) GetModbusResponse() (res ModbusResponse, err error) {
 		return
 	}
 
-	msglen := int(binary.BigEndian.Uint16(header[4:6]))
+	msglen := int(binary.BigEndian.Uint16(header[4:6]))//这里的msglen为剩余部分的长度
 	unitID := int(header[6])
 
 	cnt = 0
