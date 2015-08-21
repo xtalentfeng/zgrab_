@@ -61,7 +61,7 @@ func (r *TKPTRequest) MarshalBinary() (data []byte, err error){
 }
 
 func (r *COTPConnectionRequest) MarshalBinary() (data []byte, err error){
-	data = make([]byte,17)
+	data = make([]byte,18)
 	data[0] = r.size
 	data[1] = r.pdu_type
 	binary.BigEndian.PutUint16(data[2:4], uint16(r.dst_ref))
