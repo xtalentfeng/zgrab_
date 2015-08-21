@@ -13,8 +13,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/zmap/zgrab/ztools/ssh"
-	"github.com/zmap/zgrab/ztools/ztls"
+	"github.com/xtalentfeng/zgrab_/ztools/ssh"
+	"github.com/xtalentfeng/zgrab_/ztools/ztls"
 )
 
 type Grab struct {

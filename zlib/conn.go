@@ -22,9 +22,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/zmap/zgrab/ztools/ssh"
-	"github.com/zmap/zgrab/ztools/x509"
-	"github.com/zmap/zgrab/ztools/ztls"
+	"github.com/xtalentfeng/zgrab_/ztools/ssh"
+	"github.com/xtalentfeng/zgrab_/ztools/x509"
+	"github.com/xtalentfeng/zgrab_/ztools/ztls"
 )
 
 var smtpEndRegex = regexp.MustCompile(`(?:^\d\d\d\s.*\r\n$)|(?:^\d\d\d-[\s\S]*\r\n\d\d\d\s.*\r\n$)`)

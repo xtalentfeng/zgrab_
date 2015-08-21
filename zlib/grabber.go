@@ -18,7 +18,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/zmap/zgrab/ztools/processing"
+	"github.com/xtalentfeng/zgrab_/ztools/processing"
 )
 
 type GrabTarget struct {
