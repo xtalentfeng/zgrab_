@@ -225,7 +225,7 @@ func makeGrabber(config *Config) func(*Conn) error {
 //s7
 		if config.S7 {
 			if _, err := c.SendS7Echo(); err != nil {
-				c.erroredComponent = "modbus"
+				c.erroredComponent = "s7"
 				return err
 			}
 		}

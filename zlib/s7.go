@@ -96,7 +96,7 @@ func (m *TKPTEvent) parseSelf(){
 	if len(m.Response) < 18 {
 		return
 	}
-	if m.Response[1] != 0x0e {
+	if m.Response[1] != 0xd0 {
 		return
 	} 
 	m.pdu_type = m.Response[1]
