@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/zmap/zgrab/ztools/zlog"
+	"github.com/xtalentfeng/zgrab_/ztools/zlog"
 	. "gopkg.in/check.v1"
 )
 

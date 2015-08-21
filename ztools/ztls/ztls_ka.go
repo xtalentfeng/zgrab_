@@ -10,7 +10,7 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/zmap/zgrab/ztools/keys"
+	"github.com/xtalentfeng/zgrab_/ztools/keys"
 )
 
 // SignatureAndHash is a signatureAndHash that implements json.Marshaler and

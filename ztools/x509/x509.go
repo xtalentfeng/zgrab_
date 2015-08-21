@@ -28,7 +28,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/zmap/zgrab/ztools/x509/pkix"
+	"github.com/xtalentfeng/zgrab_/ztools/x509/pkix"
 )
 
 // pkixPublicKey reflects a PKIX public key structure. See SubjectPublicKeyInfo

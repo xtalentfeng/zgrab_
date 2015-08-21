@@ -5,8 +5,8 @@
 package ztls_test
 
 import (
-	"github.com/zmap/zgrab/ztools/x509"
-	"github.com/zmap/zgrab/ztools/ztls"
+	"github.com/xtalentfeng/zgrab_/ztools/x509"
+	"github.com/xtalentfeng/zgrab_/ztools/ztls"
 )
 
 func ExampleDial() {

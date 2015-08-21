@@ -16,7 +16,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/zmap/zgrab/ztools/x509"
+	"github.com/xtalentfeng/zgrab_/ztools/x509"
 )
 
 // Server returns a new TLS server side connection

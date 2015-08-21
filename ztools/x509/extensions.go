@@ -10,7 +10,7 @@ import (
 	"encoding/json"
 	"net"
 
-	"github.com/zmap/zgrab/ztools/x509/pkix"
+	"github.com/xtalentfeng/zgrab_/ztools/x509/pkix"
 )
 
 var (

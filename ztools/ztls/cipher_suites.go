@@ -17,7 +17,7 @@ import (
 	"hash"
 
 	"github.com/dadrian/rc2"
-	"github.com/zmap/zgrab/ztools/x509"
+	"github.com/xtalentfeng/zgrab_/ztools/x509"
 )
 
 // a keyAgreement implements the client and server side of a TLS key agreement
