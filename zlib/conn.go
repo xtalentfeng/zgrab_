@@ -636,14 +636,14 @@ func (c *Conn) SendS7Echo() (int,error){
 		}
 	}
 	res, err := c.GetS7Response()
-	event.version = res.version
-	event.reserved = res.reserved
-	event.size = res.size
+	event.Version = res.version
+	event.Reserved = res.reserved
+	event.Size = res.size
 	event.Response = res.data
 	//event.parseSelf()
-	event.pdu_type = event.Response[1]
-	event.dst_tsap = int (binary.BigEndian.Uint16(event.Response[13:15]))
-	event.src_tsap = int (binary.BigEndian.Uint16(event.Response[9:11]))
+	event.Pdu_type = event.Response[1]
+	event.Dst_tsap = int (binary.BigEndian.Uint16(event.Response[13:15]))
+	event.Src_tsap = int (binary.BigEndian.Uint16(event.Response[9:11]))
 
 	c.grabData.S7 = event
 	return w, err

@@ -83,12 +83,12 @@ func (r *COTPConnectionRequest) MarshalBinary() (data []byte, err error){
 
 
 type TKPTEvent struct {
-	version byte `json:"version"`
-	reserved byte `json:"reserved"`
-	size int `json:"length"`
-	pdu_type byte `json:"pdu_type"`
-	dst_tsap int `json:"dst_tsap"`
-	src_tsap int `json:"src_tsap"`
+	Version byte `json:"version"`
+	Reserved byte `json:"reserved"`
+	Size int `json:"length"`
+	Pdu_type byte `json:"pdu_type"`
+	Dst_tsap int `json:"dst_tsap"`
+	Src_tsap int `json:"src_tsap"`
 	Response []byte `json:"raw_response,omitempty"`
 }
 
