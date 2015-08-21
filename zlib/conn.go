@@ -600,20 +600,20 @@ func (c *Conn) SendModbusEcho() (int, error) {
 func (c *Conn) SendS7Echo() (int,error){
 
 	COTP_req := COTPConnectionRequest{
-		size:17,
-		pdu_type:0x0e,
-		dst_ref:0,
-		src_ref:0x04, //
-		flag:0,
-		parameter_code0:0xc1,
-		parameter_length0:2,
-		src_tsap:0x100,
-		parameter_code1:0xc2,
-		parameter_length1:2,
-		dst_tsap:0x102,
-		parameter_code2:0xc0,
-		parameter_length2:1,
-		tpdu_size:0x0a,
+		size: 0x11,
+		pdu_type: 0x0e,
+		dst_ref: 0,
+		src_ref: 4, //
+		flag: 0x0,
+		parameter_code0: 0xc1,
+		parameter_length0: 0x02,
+		src_tsap: 256,
+		parameter_code1: 0xc2,
+		parameter_length1: 0x02,
+		dst_tsap: 258,
+		parameter_code2: 0xc0,
+		parameter_length2: 0x01,
+		tpdu_size: 0x0a,
 	}
 	req_COTP,err := COTP_req.MarshalBinary()
 	req := TKPTRequest{
