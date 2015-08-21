@@ -101,9 +101,9 @@ func (m *TKPTEvent) parseSelf(){
 		return
 	} 
 	*/
-	m.pdu_type = m.Response[1]
-	m.dst_tsap = int (binary.BigEndian.Uint16(m.Response[13:15]))
-	m.src_tsap = int (binary.BigEndian.Uint16(m.Response[9:11]))
+	m.Pdu_type = m.Response[1]
+	m.Dst_tsap = int (binary.BigEndian.Uint16(m.Response[13:15]))
+	m.Src_tsap = int (binary.BigEndian.Uint16(m.Response[9:11]))
 }
 
 func (c *Conn) ReadMin1(res []byte, bytes int) (cnt int, err error) {
