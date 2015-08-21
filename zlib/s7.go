@@ -124,8 +124,6 @@ func (c *Conn) ReadMin1(res []byte, bytes int) (cnt int, err error) {
 	return
 }
 
-
-
 func (c *Conn) GetS7Response() (res TKPTResponse, err error){
 	var cnt int
 	buf := make([]byte,1024)
