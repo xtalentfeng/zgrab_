@@ -601,7 +601,7 @@ func (c *Conn) SendS7Echo() (int,error){
 
 	COTP_req := COTPConnectionRequest{
 		size: 0x11,
-		pdu_type: 0x0e,
+		pdu_type: 0xe0,
 		dst_ref: 0,
 		src_ref: 4, //
 		flag: 0x0,

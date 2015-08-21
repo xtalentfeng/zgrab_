@@ -132,7 +132,7 @@ func (c *Conn) GetS7Response() (res TKPTResponse, err error){
 
 	cnt, err = c.ReadMin1(header,4)
 	if err != nil{
-		err = fmt.Errorf("modbus:could not get response: %s", err.Error())
+		err = fmt.Errorf("s7:could not get response: %s", err.Error())
 		return
 	}
 
