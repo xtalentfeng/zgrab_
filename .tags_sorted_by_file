@@ -1,0 +1,27 @@
+unknown_extension	zgrab_schema.py	/^unknown_extension = SubRecord({$/;"	v
+zgrab_banner	zgrab_schema.py	/^zgrab_banner = Record({$/;"	v
+zgrab_base	zgrab_schema.py	/^zgrab_base = Record({$/;"	v
+zgrab_certificate	zgrab_schema.py	/^zgrab_certificate = SubRecord({$/;"	v
+zgrab_heartbleed	zgrab_schema.py	/^zgrab_heartbleed = SubRecord({$/;"	v
+zgrab_http	zgrab_schema.py	/^zgrab_http = Record({$/;"	v
+zgrab_http_headers	zgrab_schema.py	/^zgrab_http_headers = SubRecord({$/;"	v
+zgrab_http_proxy	zgrab_schema.py	/^zgrab_http_proxy = Record({$/;"	v
+zgrab_http_request	zgrab_schema.py	/^zgrab_http_request = SubRecord({$/;"	v
+zgrab_http_response	zgrab_schema.py	/^zgrab_http_response = SubRecord({$/;"	v
+zgrab_https	zgrab_schema.py	/^zgrab_https = Record({$/;"	v
+zgrab_https_heartbleed	zgrab_schema.py	/^zgrab_https_heartbleed = Record({$/;"	v
+zgrab_modbus	zgrab_schema.py	/^zgrab_modbus = Record({$/;"	v
+zgrab_old_http	zgrab_schema.py	/^zgrab_old_http = Record({$/;"	v
+zgrab_parsed_certificate	zgrab_schema.py	/^zgrab_parsed_certificate = SubRecord({$/;"	v
+zgrab_smtp	zgrab_schema.py	/^zgrab_smtp = Record({$/;"	v
+zgrab_starttls	zgrab_schema.py	/^zgrab_starttls = Record({$/;"	v
+zgrab_subj_issuer	zgrab_schema.py	/^zgrab_subj_issuer = SubRecord({$/;"	v
+zgrab_tls	zgrab_schema.py	/^zgrab_tls = SubRecord({$/;"	v
+zgrab_tls_banner	zgrab_schema.py	/^zgrab_tls_banner=Record({$/;"	v
+zgrab_unknown_http_header	zgrab_schema.py	/^zgrab_unknown_http_header = SubRecord({$/;"	v
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
