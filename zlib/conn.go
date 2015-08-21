@@ -21,6 +21,7 @@ import (
 	"strconv"
 	"strings"
 	"time"
+	"encoding/binary"
 
 	"github.com/xtalentfeng/zgrab_/ztools/ssh"
 	"github.com/xtalentfeng/zgrab_/ztools/x509"
