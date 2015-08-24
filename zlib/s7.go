@@ -93,14 +93,13 @@ type TKPTEvent struct {
 }
 
 func (m *TKPTEvent) parseSelf(){
-	/*
 	if len(m.Response) < 18 {
 		return
 	}
 	if m.Response[1] != 0xd0 {
 		return
 	} 
-	*/
+		
 	m.Pdu_type = m.Response[1]
 	m.Dst_tsap = int (binary.BigEndian.Uint16(m.Response[13:15]))
 	m.Src_tsap = int (binary.BigEndian.Uint16(m.Response[9:11]))

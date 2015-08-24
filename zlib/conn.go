@@ -640,11 +640,12 @@ func (c *Conn) SendS7Echo() (int,error){
 	event.Reserved = res.reserved
 	event.Size = res.size
 	event.Response = res.data
-	//event.parseSelf()
+	event.parseSelf()
+	/*
 	event.Pdu_type = event.Response[1]
 	event.Dst_tsap = int (binary.BigEndian.Uint16(event.Response[13:15]))
 	event.Src_tsap = int (binary.BigEndian.Uint16(event.Response[9:11]))
-
+	*/
 	c.grabData.S7 = event
 	return w, err
 
